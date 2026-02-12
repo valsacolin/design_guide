@@ -1,0 +1,181 @@
+/* ============================================
+   ButtonCSS 컴포넌트 스타일
+   디자이너가 쉽게 수정할 수 있도록 작성되었습니다.
+   ============================================ */
+
+/* 기본 버튼 스타일 */
+.btn-css {
+  /* 레이아웃 */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* 폰트 */
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  
+  /* 테두리 */
+  border: 2px solid transparent;
+  border-radius: 8px;
+  
+  /* 커서 & 전환 효과 */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  
+  /* 기타 */
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* 비활성화 상태 */
+.btn-css:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* 포커스 상태 (접근성) */
+.btn-css:focus-visible {
+  outline: 3px solid rgba(59, 130, 246, 0.5);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   크기 변형 (Size Variants)
+   ============================================ */
+
+/* Small 크기 */
+.btn-css-small {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Medium 크기 (기본) */
+.btn-css-medium {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Large 크기 */
+.btn-css-large {
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+/* ============================================
+   색상 변형 (Color Variants)
+   ============================================ */
+
+/* Primary (주요 액션) */
+.btn-css-primary {
+  background-color: #3B82F6; /* 파란색 */
+  color: white;
+  border-color: #3B82F6;
+}
+
+.btn-css-primary:hover:not(:disabled) {
+  background-color: #2563EB; /* 더 진한 파란색 */
+  border-color: #2563EB;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.btn-css-primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+/* Secondary (보조 액션) */
+.btn-css-secondary {
+  background-color: #E5E7EB; /* 회색 */
+  color: #1F2937; /* 어두운 회색 텍스트 */
+  border-color: #E5E7EB;
+}
+
+.btn-css-secondary:hover:not(:disabled) {
+  background-color: #D1D5DB;
+  border-color: #D1D5DB;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-css-secondary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Destructive (위험한 액션) */
+.btn-css-destructive {
+  background-color: #EF4444; /* 빨간색 */
+  color: white;
+  border-color: #EF4444;
+}
+
+.btn-css-destructive:hover:not(:disabled) {
+  background-color: #DC2626; /* 더 진한 빨간색 */
+  border-color: #DC2626;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.btn-css-destructive:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Outline (테두리만) */
+.btn-css-outline {
+  background-color: transparent;
+  color: #3B82F6;
+  border-color: #3B82F6;
+}
+
+.btn-css-outline:hover:not(:disabled) {
+  background-color: rgba(59, 130, 246, 0.1);
+  transform: translateY(-1px);
+}
+
+.btn-css-outline:active:not(:disabled) {
+  transform: translateY(0);
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+/* Ghost (투명) */
+.btn-css-ghost {
+  background-color: transparent;
+  color: #1F2937;
+  border-color: transparent;
+}
+
+.btn-css-ghost:hover:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn-css-ghost:active:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   다크 모드 지원 (선택사항)
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  .btn-css-secondary {
+    background-color: #374151;
+    color: #F9FAFB;
+    border-color: #374151;
+  }
+  
+  .btn-css-secondary:hover:not(:disabled) {
+    background-color: #4B5563;
+    border-color: #4B5563;
+  }
+  
+  .btn-css-ghost {
+    color: #F9FAFB;
+  }
+  
+  .btn-css-ghost:hover:not(:disabled) {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

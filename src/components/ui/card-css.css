@@ -1,0 +1,193 @@
+/* ============================================
+   CardCSS 컴포넌트 스타일
+   디자이너가 쉽게 수정할 수 있도록 작성되었습니다.
+   ============================================ */
+
+/* 기본 카드 스타일 */
+.card-css {
+  /* 레이아웃 */
+  display: flex;
+  flex-direction: column;
+  
+  /* 크기 */
+  width: 100%;
+  max-width: 400px;
+  
+  /* 배경 & 테두리 */
+  background-color: white;
+  border-radius: 12px;
+  
+  /* 전환 효과 */
+  transition: all 0.3s ease;
+}
+
+/* ============================================
+   카드 변형 (Variants)
+   ============================================ */
+
+/* Default - 기본 스타일 */
+.card-css-default {
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-css-default:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Bordered - 테두리 강조 */
+.card-css-bordered {
+  border: 2px solid #3B82F6;
+  box-shadow: none;
+}
+
+.card-css-bordered:hover {
+  border-color: #2563EB;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+/* Elevated - 그림자 강조 */
+.card-css-elevated {
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-css-elevated:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  transform: translateY(-4px);
+}
+
+/* ============================================
+   카드 내부 요소들
+   ============================================ */
+
+/* Header (상단 영역) */
+.card-css-header {
+  padding: 24px 24px 16px 24px;
+  border-bottom: 1px solid #F3F4F6;
+}
+
+/* Title (제목) */
+.card-css-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #111827;
+}
+
+/* Description (설명) */
+.card-css-description {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6B7280;
+}
+
+/* Content (본문) */
+.card-css-content {
+  padding: 24px;
+  flex: 1;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+/* Footer (하단 영역) */
+.card-css-footer {
+  padding: 16px 24px 24px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  border-top: 1px solid #F3F4F6;
+}
+
+/* ============================================
+   반응형 디자인
+   ============================================ */
+
+/* 모바일 (작은 화면) */
+@media (max-width: 640px) {
+  .card-css {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card-css-header {
+    padding: 16px 16px 12px 16px;
+  }
+  
+  .card-css-title {
+    font-size: 18px;
+  }
+  
+  .card-css-content {
+    padding: 16px;
+    font-size: 14px;
+  }
+  
+  .card-css-footer {
+    padding: 12px 16px 16px 16px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* ============================================
+   다크 모드 지원
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  .card-css {
+    background-color: #1F2937;
+  }
+  
+  .card-css-default {
+    border-color: #374151;
+  }
+  
+  .card-css-header {
+    border-bottom-color: #374151;
+  }
+  
+  .card-css-title {
+    color: #F9FAFB;
+  }
+  
+  .card-css-description {
+    color: #9CA3AF;
+  }
+  
+  .card-css-content {
+    color: #D1D5DB;
+  }
+  
+  .card-css-footer {
+    border-top-color: #374151;
+  }
+}
+
+/* ============================================
+   추가 유틸리티 클래스
+   ============================================ */
+
+/* 카드 내부 이미지 */
+.card-css img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* 카드 내부 리스트 */
+.card-css ul,
+.card-css ol {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.card-css li {
+  margin: 8px 0;
+  line-height: 1.6;
+}
