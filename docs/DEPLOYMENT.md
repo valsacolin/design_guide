@@ -23,7 +23,7 @@ GitHub Actions가 자동으로:
 ### 배포 URL
 
 배포가 완료되면 다음 URL에서 확인할 수 있습니다:
-- **https://bluestonedxt-dev.github.io/design_guide/**
+- **https://valsacolin.github.io/design_guide/**
 
 ## 📋 브랜치 전략
 

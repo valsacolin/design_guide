@@ -4,7 +4,7 @@
 
 ### 1. GitHub 저장소 Settings 접속
 
-1. 브라우저에서 https://github.com/BluStoneDXT-dev/design_guide 접속
+1. 브라우저에서 https://github.com/valsacolin/design_guide 접속
 2. 상단 메뉴에서 **Settings** 클릭
 3. 왼쪽 사이드바에서 **Pages** 클릭
 
