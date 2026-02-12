@@ -82,7 +82,7 @@ git merge main
 git push origin production
 
 # 3. GitHub Actions에서 자동 배포
-# 4. https://bluestonedxt-dev.github.io/design_guide/ 에서 확인
+# 4. https://valsacolin.github.io/design_guide/ 에서 확인
 ```
 
 ## ⚠️ 주의사항

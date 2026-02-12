@@ -9,7 +9,7 @@
 3. 왼쪽 사이드바에서 **Pages** 클릭
 
 또는 직접 URL 접속:
-- https://github.com/BluStoneDXT-dev/design_guide/settings/pages
+- https://github.com/valsacolin/design_guide/settings/pages
 
 ---
 
@@ -33,7 +33,7 @@
 GitHub Pages가 설정되면, `production` 브랜치에 이미 푸시되어 있으므로:
 
 1. **Actions** 탭으로 이동
-   - https://github.com/BluStoneDXT-dev/design_guide/actions
+   - https://github.com/valsacolin/design_guide/actions
 
 2. **"Deploy Storybook to GitHub Pages"** 워크플로우 확인
    - 자동으로 실행되어야 합니다
@@ -49,7 +49,7 @@ GitHub Pages가 설정되면, `production` 브랜치에 이미 푸시되어 있�
 
 배포가 완료되면 다음 URL에서 Storybook을 확인할 수 있습니다:
 
-**🔗 https://bluestonedxt-dev.github.io/design_guide/**
+**🔗 https://valsacolin.github.io/design_guide/**
 
 ---
 
@@ -62,7 +62,7 @@ Settings → Pages 페이지에서 다음과 같이 표시되어야 합니다:
 ```
 Build and deployment
 ├── Source: GitHub Actions ✅
-└── Your site is live at https://bluestonedxt-dev.github.io/design_guide/
+└── Your site is live at https://valsacolin.github.io/design_guide/
 ```
 
 ### Actions 워크플로우 확인
@@ -95,7 +95,7 @@ git push origin production  # 자동 배포 시작!
 ### 배포 확인
 
 1. GitHub → Actions 탭에서 진행 상황 확인
-2. 완료 후 https://bluestonedxt-dev.github.io/design_guide/ 접속
+2. 완료 후 https://valsacolin.github.io/design_guide/ 접속
 3. 변경사항 반영 확인
 
 ---
@@ -143,4 +143,4 @@ git push origin production  # 자동 배포 시작!
 
 ---
 
-**다음 단계:** 위 설정을 완료하신 후, https://bluestonedxt-dev.github.io/design_guide/ 에서 Storybook을 확인하세요! 🎉
+**다음 단계:** 위 설정을 완료하신 후, https://valsacolin.github.io/design_guide/ 에서 Storybook을 확인하세요! 🎉
