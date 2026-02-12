@@ -27,11 +27,11 @@ export const Default: Story = {
   render: () => (
     <Card className="w-[350px]">
       <CardHeader>
-        <CardTitle>Card Title</CardTitle>
-        <CardDescription>Card Description</CardDescription>
+        <CardTitle>카드 제목</CardTitle>
+        <CardDescription>카드 설명</CardDescription>
       </CardHeader>
       <CardContent>
-        <p>Card Content</p>
+        <p>카드 내용</p>
       </CardContent>
     </Card>
   ),
@@ -41,15 +41,15 @@ export const WithFooter: Story = {
   render: () => (
     <Card className="w-[350px]">
       <CardHeader>
-        <CardTitle>Create project</CardTitle>
-        <CardDescription>Deploy your new project in one-click.</CardDescription>
+        <CardTitle>프로젝트 생성</CardTitle>
+        <CardDescription>클릭 한 번으로 새 프로젝트를 배포하세요.</CardDescription>
       </CardHeader>
       <CardContent>
-        <p>Click the button below to create your project.</p>
+        <p>아래 버튼을 클릭하여 프로젝트를 생성하세요.</p>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button variant="outline">Cancel</Button>
-        <Button>Deploy</Button>
+        <Button variant="outline">취소</Button>
+        <Button>배포</Button>
       </CardFooter>
     </Card>
   ),
