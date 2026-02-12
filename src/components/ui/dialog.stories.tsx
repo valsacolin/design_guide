@@ -28,7 +28,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <Dialog>
-      <DialogTrigger asChild>
+      <DialogTrigger>
         <Button variant="outline">다이얼로그 열기</Button>
       </DialogTrigger>
       <DialogContent>
@@ -42,7 +42,7 @@ export const Default: Story = {
           <p className="text-sm">다이얼로그 내용이 여기에 표시됩니다.</p>
         </div>
         <DialogFooter>
-          <DialogClose asChild>
+          <DialogClose>
             <Button variant="outline">취소</Button>
           </DialogClose>
           <Button>확인</Button>
@@ -55,7 +55,7 @@ export const Default: Story = {
 export const WithForm: Story = {
   render: () => (
     <Dialog>
-      <DialogTrigger asChild>
+      <DialogTrigger>
         <Button>프로필 수정</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
@@ -98,7 +98,7 @@ export const WithForm: Story = {
 export const Confirmation: Story = {
   render: () => (
     <Dialog>
-      <DialogTrigger asChild>
+      <DialogTrigger>
         <Button variant="destructive">계정 삭제</Button>
       </DialogTrigger>
       <DialogContent>
@@ -109,7 +109,7 @@ export const Confirmation: Story = {
           </DialogDescription>
         </DialogHeader>
         <DialogFooter>
-          <DialogClose asChild>
+          <DialogClose>
             <Button variant="outline">취소</Button>
           </DialogClose>
           <Button variant="destructive">삭제</Button>
@@ -122,7 +122,7 @@ export const Confirmation: Story = {
 export const LongContent: Story = {
   render: () => (
     <Dialog>
-      <DialogTrigger asChild>
+      <DialogTrigger>
         <Button variant="outline">약관 보기</Button>
       </DialogTrigger>
       <DialogContent className="max-h-[80vh] overflow-y-auto">
@@ -155,7 +155,7 @@ export const LongContent: Story = {
           </div>
         </div>
         <DialogFooter>
-          <DialogClose asChild>
+          <DialogClose>
             <Button>확인</Button>
           </DialogClose>
         </DialogFooter>
@@ -167,7 +167,7 @@ export const LongContent: Story = {
 export const CustomWidth: Story = {
   render: () => (
     <Dialog>
-      <DialogTrigger asChild>
+      <DialogTrigger>
         <Button variant="outline">큰 다이얼로그</Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[625px]">

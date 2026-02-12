@@ -24,7 +24,7 @@ shadcn/ui 기반의 React 컴포넌트 라이브러리입니다. Storybook을 �
 - **React** 19.2.0
 - **TypeScript** 5.9.3
 - **Tailwind CSS** 3.4.0
-- **shadcn/ui** (Radix UI 기반)
+- **shadcn/ui** (Base UI 기반)
 - **Storybook** 10.2.8
 - **Vite** 6.0.11
 
@@ -67,8 +67,8 @@ npm run build
 - **Label**: 폼 레이블
 - **Badge**: 상태 표시 배지 (default, secondary, destructive, outline)
 - **Alert**: 알림 메시지 (default, destructive, success, warning)
-- **Dialog**: 모달 다이얼로그 (Radix UI 기반)
-- **Tabs**: 탭 네비게이션 (Radix UI 기반)
+- **Dialog**: 모달 다이얼로그 (Base UI 기반)
+- **Tabs**: 탭 네비게이션 (Base UI 기반)
 
 ## 💻 사용 예시
 
