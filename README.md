@@ -1,5 +1,11 @@
 # 회사 디자인 시스템
 
+![Storybook](https://img.shields.io/badge/Storybook-10.2.8-FF4785?logo=storybook&logoColor=white)
+![React](https://img.shields.io/badge/React-19.2.0-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.0-38B2AC?logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6.0.11-646CFF?logo=vite&logoColor=white)
+
 shadcn/ui 기반의 React 컴포넌트 라이브러리입니다. Storybook을 통해 모든 컴포넌트를 문서화하고 공유합니다.
 
 > 📚 **[전체 문서 보기](./docs/README.md)** | **[디자이너 가이드](./docs/DESIGNER_GUIDE.md)** | **[시작하기](./docs/GETTING_STARTED.md)**
@@ -19,8 +25,8 @@ shadcn/ui 기반의 React 컴포넌트 라이브러리입니다. Storybook을 �
 - **TypeScript** 5.9.3
 - **Tailwind CSS** 3.4.0
 - **shadcn/ui** (Radix UI 기반)
-- **Storybook** 8.6.15
-- **Vite** 7.3.1
+- **Storybook** 10.2.8
+- **Vite** 6.0.11
 
 ## 🚀 시작하기
 
@@ -59,6 +65,10 @@ npm run build
 - **Card**: 카드 컨테이너 및 관련 컴포넌트 (Header, Title, Description, Content, Footer)
 - **Input**: 폼 입력 필드
 - **Label**: 폼 레이블
+- **Badge**: 상태 표시 배지 (default, secondary, destructive, outline)
+- **Alert**: 알림 메시지 (default, destructive, success, warning)
+- **Dialog**: 모달 다이얼로그 (Radix UI 기반)
+- **Tabs**: 탭 네비게이션 (Radix UI 기반)
 
 ## 💻 사용 예시
 
