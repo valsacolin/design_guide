@@ -26,14 +26,14 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    children: 'Button',
+    children: '버튼',
   },
 }
 
 export const Destructive: Story = {
   args: {
     variant: 'destructive',
-    children: 'Delete',
+    children: '삭제',
   },
 }
 
@@ -47,7 +47,7 @@ export const Outline: Story = {
 export const Secondary: Story = {
   args: {
     variant: 'secondary',
-    children: 'Secondary',
+    children: '보조',
   },
 }
 
@@ -61,14 +61,14 @@ export const Ghost: Story = {
 export const Link: Story = {
   args: {
     variant: 'link',
-    children: 'Link',
+    children: '링크',
   },
 }
 
 export const Small: Story = {
   args: {
     size: 'sm',
-    children: 'Small',
+    children: '작게',
   },
 }
 
@@ -91,7 +91,7 @@ export const WithIcon: Story = {
     children: (
       <>
         <Mail className="mr-2 h-4 w-4" />
-        Login with Email
+        이메일로 로그인
       </>
     ),
   },
@@ -103,7 +103,7 @@ export const Loading: Story = {
     children: (
       <>
         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-        Please wait
+        잠시만 기다려주세요
       </>
     ),
   },
@@ -112,7 +112,7 @@ export const Loading: Story = {
 export const Disabled: Story = {
   args: {
     disabled: true,
-    children: 'Disabled',
+    children: '비활성화',
   },
 }
 
@@ -120,17 +120,17 @@ export const AllVariants: Story = {
   render: () => (
     <div className="flex flex-col gap-4">
       <div className="flex gap-2">
-        <Button variant="default">Default</Button>
-        <Button variant="destructive">Destructive</Button>
+        <Button variant="default">기본</Button>
+        <Button variant="destructive">삭제</Button>
         <Button variant="outline">Outline</Button>
-        <Button variant="secondary">Secondary</Button>
+        <Button variant="secondary">보조</Button>
         <Button variant="ghost">Ghost</Button>
-        <Button variant="link">Link</Button>
+        <Button variant="link">링크</Button>
       </div>
       <div className="flex gap-2 items-center">
-        <Button size="sm">Small</Button>
-        <Button size="default">Default</Button>
-        <Button size="lg">Large</Button>
+        <Button size="sm">작게</Button>
+        <Button size="default">기본</Button>
+        <Button size="lg">크게</Button>
         <Button size="icon">
           <Mail className="h-4 w-4" />
         </Button>
