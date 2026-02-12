@@ -6,13 +6,13 @@
 
 ### 자동 배포 (권장)
 
-`production` 브랜치에 푸시하면 자동으로 배포됩니다:
+`main` 브랜치에 푸시하면 자동으로 배포됩니다:
 
 ```bash
 # main 브랜치에서 작업 후
-git checkout production
-git merge main
-git push origin production
+git add .
+git commit -m "feat: 새 컴포넌트 추가"
+git push origin main  # 자동 배포 시작!
 ```
 
 GitHub Actions가 자동으로:
@@ -27,8 +27,7 @@ GitHub Actions가 자동으로:
 
 ## 📋 브랜치 전략
 
-- **`main`**: 개발 브랜치 (새 기능, 컴포넌트 추가)
-- **`production`**: 배포 브랜치 (안정적인 버전만)
+- **`main`**: 개발 및 배포 브랜치 (모든 변경사항이 자동 배포됨)
 
 ## 🔧 GitHub Pages 설정
 
@@ -76,19 +75,13 @@ git checkout main
 # ... 작업 및 커밋 ...
 git push origin main
 
-# 2. production 브랜치로 배포
-git checkout production
-git merge main
-git push origin production
-
-# 3. GitHub Actions에서 자동 배포
-# 4. https://valsacolin.github.io/design_guide/ 에서 확인
+# 2. GitHub Actions에서 자동 배포
+# 3. https://valsacolin.github.io/design_guide/ 에서 확인
 ```
 
 ## ⚠️ 주의사항
 
-- `production` 브랜치에 직접 커밋하지 마세요
-- 항상 `main`에서 작업 후 `production`으로 머지
+- main 브랜치에 푸시하면 자동으로 배포됩니다
 - 배포 전에 로컬에서 빌드 테스트 권장
 
 ## 🐛 문제 해결
